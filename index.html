@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festejando Conexão Campo-Cidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Festejando Conexão Campo-Cidade</h1>
+        <p>Celebrando a união entre o rural e o urbano!</p>
+        <nav>
+            <button onclick="scrollToSection('sobre')">Sobre</button>
+            <button onclick="scrollToSection('galeria')">Galeria</button>
+            <button onclick="scrollToSection('video')">Vídeo</button>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre o Evento</h2>
+        <p>Um festival que conecta o campo e a cidade com cultura, gastronomia, música e troca de saberes.</p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="galeria">
+            <img src="assets/img/campo.jpg" alt="Vida no campo">
+            <img src="assets/img/cidade.jpg" alt="Vida na cidade">
+            <img src="assets/img/Feira.jpg" alt="Feira de produtos locais">
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Vídeo do Evento</h2>
+        <video controls>
+            <source src="assets/video/festival" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+        </video>
+    </section>
+
+    <footer>
+        <p>© 2025 Festejando Conexão Campo-Cidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
