@@ -1,0 +1,192 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #2e8b57;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  background: #3cb371;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+header nav a:hover {
+  background: #2e8b57;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto 60px;
+  padding: 0 15px;
+}
+
+.bloco {
+  background: white;
+  border-radius: 10px;
+  padding: 25px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+.bloco:nth-child(odd) {
+  animation-delay: 0.15s;
+}
+.bloco:nth-child(even) {
+  animation-delay: 0.3s;
+}
+
+.bloco h2 {
+  margin-bottom: 15px;
+  color: #2e8b57;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #3b7a32;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.botoes-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.botoes-container button {
+  background-color: #3cb371;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botoes-container button:hover {
+  background-color: #2e8b57;
+  transform: scale(1.05);
+}
+
+.mensagem {
+  margin-top: 25px;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #2e8b57;
+  min-height: 70px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.carrossel-controles {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.carrossel-controles button {
+  background-color: #3cb371;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  margin: 0 10px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carrossel-controles button:hover {
+  background-color: #2e8b57;
+}
+
+/* Gráfico de barras simples */
+
+.grafico-barras {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 220px;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.barra {
+  width: 120px;
+  background-color: #3cb371;
+  border-radius: 8px 8px 0 0;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.barra.campo {
+  background-color: #2e8b57;
+}
+
+.barra:hover {
+  background-color: #276346;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background: #2e8b57;
+  color: white;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Animação fade-in */
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
