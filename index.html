@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conexão Campo-Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Conexão Campo-Cidade</h1>
+  <div class="botoes">
+    <button onclick="setModo('campo')">🌾 Campo</button>
+    <button onclick="setModo('cidade')">🏙️ Cidade</button>
+    <button onclick="setModo('ambos')">🔄 Ambos</button>
+  </div>
+
+  <main id="canvas-container"></main>
+
+  <section class="galeria">
+    <h2>Galeria</h2>
+    <img src="imagens/campo.jpg" alt="Imagem do Campo" />
+    <img src="imagens/cidade.jpg" alt="Imagem da Cidade" />
+  </section>
+
+  <section class="informacoes">
+    <h2>Importância da Conexão</h2>
+    <p>O campo fornece alimentos, matérias-primas e recursos naturais. Já a cidade oferece serviços, tecnologia e infraestrutura. Juntas, elas formam um sistema interdependente que sustenta a vida moderna.</p>
+  </section>
+
+  <section class="curiosidades">
+    <h2>Curiosidades</h2>
+    <ul>
+      <li>Mais de 80% da população brasileira vive em áreas urbanas.</li>
+      <li>O campo é responsável por mais de 25% do PIB nacional.</li>
+      <li>A agricultura urbana está crescendo como solução sustentável.</li>
+    </ul>
+  </section>
+
+  <section class="links">
+    <h2>Saiba mais</h2>
+    <ul>
+      <li><a href="https://www.ibge.gov.br" target="_blank">IBGE</a></li>
+      <li><a href="https://www.embrapa.br" target="_blank">EMBRAPA</a></li>
+      <li><a href="https://pt.wikipedia.org/wiki/Agricultura_urbana" target="_blank">Agricultura Urbana</a></li>
+    </ul>
+  </section>
+
+  <script src="p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
