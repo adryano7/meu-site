@@ -1,52 +1,43 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festejando Conexão Campo-Cidade</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conexão Campo-Cidade</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Festejando Conexão Campo-Cidade</h1>
-        <p>Celebrando a união entre o rural e o urbano!</p>
-        <nav>
-            <button onclick="scrollToSection('sobre')">Sobre</button>
-            <button onclick="scrollToSection('galeria')">Galeria</button>
-            <button onclick="scrollToSection('video')">Vídeo</button>
-        </nav>
-    </header>
+  <h1>Conexão Campo-Cidade</h1>
+  <div class="botoes">
+    <button onclick="setModo('campo')">🌾 Campo</button>
+    <button onclick="setModo('cidade')">🏙️ Cidade</button>
+    <button onclick="setModo('ambos')">🔄 Ambos</button>
+  </div>
 
-    <section id="sobre">
-        <h2>Sobre o Evento</h2>
-        <p>Um festival que conecta o campo e a cidade com cultura, gastronomia, música e troca de saberes.</p>
-    </section>
+  <main id="canvas-container"></main>
 
-    <section id="galeria">
-        <h2>Galeria de Imagens</h2>
-        <div class="galeria">
-            <img src="assets/img/campo.jpg" alt="Vida no campo">
-            <img src="assets/img/cidade.jpg" alt="Vida na cidade">
-            <img src="assets/img/Feira.jpg" alt="Feira de produtos locais">
-        </div>
-    </section>
+  <section class="galeria">
+    <h2>Galeria</h2>
+    <img src="imagens/campo.jpg" alt="Imagem do Campo" />
+    <img src="imagens/cidade.jpg" alt="Imagem da Cidade" />
+  </section>
 
-    <section id="video">
-        <h2>Vídeo do Evento</h2>
-        <video controls>
-            <source src="assets/video/festival" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
-        </video>
-    </section>
+  <section class="video">
+    <h2>Vídeo: A conexão entre Campo e Cidade</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zSJ1EyplXxk" frameborder="0" allowfullscreen></iframe>
+  </section>
 
-    <footer>
-        <p>© 2025 Festejando Conexão Campo-Cidade. Todos os direitos reservados.</p>
-    </footer>
+  <section class="links">
+    <h2>Saiba mais</h2>
+    <ul>
+      <li><a href="https://www.ibge.gov.br" target="_blank">IBGE</a></li>
+      <li><a href="https://www.embrapa.br" target="_blank">EMBRAPA</a></li>
+      <li><a href="https://pt.wikipedia.org/wiki/Agricultura_urbana" target="_blank">Agricultura Urbana</a></li>
+    </ul>
+  </section>
 
-    <script>
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+  <script src="p5.min.js"></script>
+  <script src="sketch.js"></script>
 </body>
 </html>
